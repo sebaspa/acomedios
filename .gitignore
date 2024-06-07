@@ -102,7 +102,8 @@ $RECYCLE.BIN/
 /languages
 /plugins/index.php
 /themes/index.php
-
+/plugins
+/plugins/*
 
 # Example themes
 /themes/twenty*/
