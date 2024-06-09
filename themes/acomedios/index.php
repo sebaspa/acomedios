@@ -13,7 +13,9 @@ endif;
 ?>
 
 <?php get_template_part('template-parts/content', 'menu-header' ); ?>
-
+<div class="bgBanner">
+  <div class="bgBanner__img"></div>
+</div>
 <div class="bgPhone">
   <div class="bgPhone__img"></div>
 </div>

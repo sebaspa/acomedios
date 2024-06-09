@@ -1,11 +1,14 @@
-<div class="navbar">
-  <nav class="main-nav">
-    <ul>
+  <nav class="menu">
+    <ul class="menu_items">
       <li><a class="active" href="<?= site_url(); ?>">Acomedios</a></li>
       <li><a href="#">Servicios</a></li>
       <li><a href="#">Partners</a></li>
       <li><a href="#">Personas Reales</a></li>
-      <li><a href="<?= site_url(); ?>"><img src="<?= get_template_directory_uri()."/images/logo-menu.png"; ?>" alt="Logo"></a></li>
+      <li>
+        <a href="<?= site_url(); ?>">
+          <img class="logo" src="<?= get_template_directory_uri()."/images/logo-menu.png"; ?>" alt="Logo">
+        </a>
+      </li>
       <li><a href="#">Vístete ACO</a></li>
       <li><a href="#">Únete al parche</a></li>
       <li><a href="#">Contáctanos</a></li>
@@ -17,6 +20,7 @@
       </li>
     </ul>
 
-    <div class="menu-toggle"></div>
+    <span class="btn_menu">
+      <i class="fa fa-bars"></i>
+    </span>
   </nav>
-</div>
