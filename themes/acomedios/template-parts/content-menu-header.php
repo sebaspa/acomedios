@@ -19,7 +19,6 @@
         </svg>
       </li>
     </ul>
-
     <span class="btn_menu">
       <i class="fa fa-bars"></i>
     </span>

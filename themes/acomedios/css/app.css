@@ -270,13 +270,12 @@ html, body {
 }
 
 ul.show {
-  top: 65px;
+  top: -65px;
+  background-color: rgb(67,11,138);
 }
 
 @media screen and ( max-width: 952px ) {
-  .logo {
-
-  }
+  .logo {}
 
   .menu_items li a {
     font-size: 12px;
@@ -286,6 +285,9 @@ ul.show {
 @media screen and ( max-width: 858px ) {
   .menu {
     height: 60px;
+    background-color: rgb(67,11,138);
+    display: flex;
+    justify-content: flex-end;
   }
 
   .btn_menu {
@@ -309,6 +311,7 @@ ul.show {
 
   .menu_items li {
     background: none;
+    border-bottom: #fff;
   }
 
   .menu_items li a {
@@ -319,10 +322,11 @@ ul.show {
 @media screen and ( max-width: 858px ) and ( orientation: landscape ) {
   .menu_items {
     overflow: scroll;
-    height: calc( 100% - 60px );
+    height: calc( 100% + 60px );
   }
 
   .menu_items li {
     margin: 5px 0 0 0;
+    border-bottom: #fff;
   }
 }
