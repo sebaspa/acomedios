@@ -1,0 +1,419 @@
+
+.bgBanner {
+  position: absolute;
+  width: 100%;
+  height: 1500px;
+  background: url("../images/BG-home-recortado.png") center center no-repeat #fff;
+  background-size: cover;
+}
+
+.banner__container {
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+  min-height: 420px;
+}
+
+.banner__title {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.banner__title p {
+  font-size: 72px;
+  color: #fff;
+  text-align: center;
+  padding-top:80px;
+  margin-left: 250px;
+  text-shadow:2px 2px 4px #333131 ;
+}
+
+.banner__imgJuntos {
+  text-align: right;
+  margin-right: 230px;
+  margin-top: 100px;
+}
+
+.banner__btn {
+  text-align: center;
+}
+
+.banner__btn a {
+  color: #000;
+  font-size: 24px;
+  border-radius: 50px;
+  background-color: #e2e1e4;
+  line-height: 32px;
+  text-decoration: none;
+  padding: 34px 37px;
+  font-weight: 700;
+  border-color: #333;
+  margin-left: 30px;
+}
+
+.banner__btn a:hover {
+  background-color: #000;
+  color: #e2e1e4;
+  box-shadow: 2px 2px 4px black;
+}
+
+.banner__imgPersonas {
+  text-align: right;
+  margin-right: 250px;
+}
+  
+.banner__imgPersonas img {
+  width: 400px;
+  height: auto;
+}
+.ideas {margin-left: 30px;
+  color: #9828ff;
+}
+
+.hacen {
+  font-weight: bold;
+}
+
+.realidad {
+  font-weight: bold;
+  color: #C321B7;
+}
+
+.lateral {
+  display: flex;
+  margin-top: 180px;
+}
+
+.banner__seccionInferior {
+  display: flex;
+  max-width: 1360px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 70px; 
+}
+
+.banner__textIzquierdo {
+  line-height: 50px;
+  font-size: 42px;
+  color: #333;
+  bottom: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-self: end;
+  padding-bottom: 35px;
+}
+
+.banner__textIzquierdo .bold {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.banner__textIzquierdo .background-color {
+  color: #fff;
+  background-color: #D61BC9;
+  line-height: 42px;
+  width: 100%;
+}
+
+.banner__video {
+  position: relative;
+  width: 640px; 
+  height: 360px; 
+  margin: 0 auto; 
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+  
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video frame:after{
+  background: url("../images/tv3.png") center top no-repeat transparent;
+  content: ""; /* Contenido vacío para el pseudoelemento */
+  position: absolute; /* Posicionar el pseudoelemento absolutamente */
+  top: 50%; /* Posicionar verticalmente en el centro */
+  left: 50%; /* Posicionar horizontalmente en el centro */
+  transform: translate(-50%, -50%); /* Centrar el pseudoelemento */
+  width: 100%; /* Ancho del pseudoelemento */
+  height: 100%; /* Alto del pseudoelemento */
+  background-size: contain; /* Cubrir todo el área del pseudoelemento */
+  z-index: 1; /* Colocar el pseudoelemento sobre la imagen principal */
+}
+
+.carousel__container {
+    display: flex;
+    max-width: 1360px;
+    justify-content: center;
+    padding: 0 15px;
+}
+.swiper-wrapper {
+  margin-bottom: 70px;
+}
+
+.swiper-slide {
+  opacity: 0.471;
+  background-color: #fff;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 35px;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide-active:after {
+  background: url("../images/bgphone2.png") center top no-repeat transparent;
+  content: ""; /* Contenido vacío para el pseudoelemento */
+  position: absolute; /* Posicionar el pseudoelemento absolutamente */
+  top: 50%; /* Posicionar verticalmente en el centro */
+  left: 50%; /* Posicionar horizontalmente en el centro */
+  transform: translate(-50%, -50%); /* Centrar el pseudoelemento */
+  width: 100%; /* Ancho del pseudoelemento */
+  height: 100%; /* Alto del pseudoelemento */
+  background-size: contain; /* Cubrir todo el área del pseudoelemento */
+  z-index: 1; /* Colocar el pseudoelemento sobre la imagen principal */
+}
+
+.banner__imgLateral {
+  width: 30px;
+  margin-left: 15px;
+}
+
+@media screen and ( max-width: 1024px ) {
+  .banner__title p {
+    font-size: 65px;
+  }
+}
+
+@media screen and ( max-width: 768px ) {
+
+  .banner__container {
+    padding-top: 0;
+  }
+
+  .banner__title {
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 0;
+  }
+
+  .banner__title p {
+    padding-top: 80px;
+    font-size: 54px;
+    text-align: end;
+    padding-right: 30px;
+    margin-left: 0px;
+  }
+
+  .banner__imgPersonas {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .banner__imgPersonas img {
+    width: 360px;
+    height: auto;
+  }
+
+  .banner__imgJuntos {
+    margin-right: 30px;
+    margin-top: 70px;
+    filter: drop-shadow( 5px 5px 10px #000 );
+  }
+
+  .banner__btn {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner__btn a {
+    color: #000;
+    font-size: 24px;
+    border-radius: 50px;
+    background-color: #e2e1e4;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-weight: 700;
+    border-color: #333;
+    margin: 0 auto;
+  }
+
+  .lateral {
+    display: flex;
+    margin-top: 120px;
+  }
+
+  .banner__seccionInferior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+
+  .banner__textIzquierdo {
+    line-height: 30px;
+    font-size: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner__textIzquierdo .bold {
+    font-size: 30px;
+  }
+
+  .banner__video {
+    position: relative;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .banner_video img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .banner__imgLateral {
+    width: 0px;
+    margin-left: 15px;
+  }
+
+  .video {
+    width: 90%;
+  }
+
+  .banner__imgLateral {
+    width: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and ( max-width: 414px ) {
+
+  .banner__container {
+    padding-top: 0;
+  }
+
+  .banner__title {
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 0;
+  }
+
+  .banner__title p {
+    padding-top: 50px;
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner__imgPersonas {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .banner__imgPersonas img {
+    width: 80%;
+    height: auto;
+    margin: 15px auto;
+  }
+
+  .banner__imgJuntos {
+    margin: 0 auto;
+    margin-top: 70px;
+    filter: drop-shadow(5px 5px 10px #000);
+    width: 80%;
+  }
+
+  .banner__btn {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .banner__btn a {
+    color: #000;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #e2e1e4;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-weight: 700;
+    border-color: #333;
+    margin: 0 auto;
+  }
+
+  .lateral {
+    display: flex;
+    margin-top: 180px;
+  }
+
+  .banner__seccionInferior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .banner__textIzquierdo {
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 40px;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .banner__textIzquierdo .bold {
+    font-size: 30px;
+  }
+
+  .banner__video {
+    position: relative;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .banner_video img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .banner__imgLateral {
+    width: 0px;
+    margin-left: 15px;
+  }
+
+  .video {
+    width: 90%;
+  }
+
+  .swiper-wrapper {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}

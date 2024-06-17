@@ -1,17 +1,17 @@
-  <nav class="menu">
+  <nav class="menu <?=$pagename;?>">
     <ul class="menu_items">
       <li><a class="active" href="<?= site_url(); ?>">Acomedios</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Partners</a></li>
-      <li><a href="#">Personas Reales</a></li>
-      <li>
+      <li><a href="<?= site_url('servicios'); ?>">Servicios</a></li>
+      <li><a href="<?= site_url('partners'); ?>">Partners</a></li>
+      <li><a href="<?= site_url('personas-reales'); ?>">Personas Reales</a></li>
+      <li class="menu__logo">
         <a href="<?= site_url(); ?>">
           <img class="logo" src="<?= get_template_directory_uri()."/images/logo-menu.png"; ?>" alt="Logo">
         </a>
       </li>
-      <li><a href="#">Vístete ACO</a></li>
-      <li><a href="#">Únete al parche</a></li>
-      <li><a href="#">Contáctanos</a></li>
+      <li><a href="<?= site_url('vistete-aco'); ?>">Vístete ACO</a></li>
+      <li><a href="<?= site_url('unete-al-parche'); ?>">Únete al parche</a></li>
+      <li><a href="<?= site_url('contactenos'); ?>">Contáctanos</a></li>
       <li class="search-bar">
         <input type="text" class="search-input" placeholder="Búsqueda">
         <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="20px">
@@ -19,7 +19,15 @@
         </svg>
       </li>
     </ul>
-    <span class="btn_menu">
+    <div class="menu__logoMobile">
+      <a href="<?= site_url(); ?>">
+        <img src="<?= get_template_directory_uri()."/images/logo-menu.png"; ?>" alt="Logo">
+      </a>
+    </div>
+    <span class="btn_menu ">
       <i class="fa fa-bars"></i>
+    </span>
+    <span class="btn_close hidden">
+    <i class="fas fa-window-close"></i>
     </span>
   </nav>

@@ -1,0 +1,11 @@
+{
+  "name": "sass-preprocessor",
+  "version": "1.0.0",
+  "description": "Sistema de preprocesamiento Sass para WordPress",
+  "scripts": {
+    "watch": "sass --watch sass:styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.0.0"
+   }
+}
