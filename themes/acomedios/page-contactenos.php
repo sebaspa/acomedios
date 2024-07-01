@@ -2,7 +2,7 @@
   get_header();
 ?>
 <!-- Inicio div background -->
-<div class="contactenos__bgbanner"></div>
+<div class="<?php echo $pagename; ?>__bgbanner"></div>
 <!-- Fin div background -->
 
 <!-- inicio div Contenedor para menu -->
@@ -19,17 +19,19 @@
 
     <div class="contact__form">
       <form action="">
-        <div class="form__input full__input">
+        <div class="full__input form__input">
           <input type="text" id="name" name="name" placeholder="Nombre Completo">
         </div>
-        <div class="form__input full__input">
+        <div class="full__input form__input">
           <input type="text" id="empresa" name="empresa" placeholder="Nombre de la empresa">
         </div>
-        <div class="form__input">
-          <input type="text" id="email" name="email" placeholder="E-mail">
-        </div>
-        <div class="form__input">
-          <input type="text" id="telefono" name="telefono" placeholder="Teléfono de contacto">
+        <div class="full__input double__input">
+          <div class="  form__input--half">
+            <input type="text" id="email" name="email" placeholder="E-mail">
+          </div>
+          <div class="full__input form__input--half">
+            <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+          </div>
         </div>
         <div class="form__input">
           <button class="form__btn" >Enviar</button>
@@ -55,8 +57,9 @@
       <img src="<?= get_template_directory_uri()."/images/logo-contacto.png"; ?>" alt="">
     </a>
   </div>
-
 </div>
+<!-- fin div Contenedor para banner content -->
+<?php get_template_part('template-parts/content', 'menu-footer' ); ?>
 <?php
   get_footer();
 ?>

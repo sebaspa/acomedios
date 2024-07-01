@@ -4,10 +4,11 @@
 }
 
 .contactenos__bgbanner {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100%;
-    background: url("../images/BG-contactanos2.png") right center no-repeat #4a0043;
+  height: 100vh;
+  background: url("../images/BG-contactanos2.png") right center no-repeat #4a0043;
   background-size: cover;
   z-index: -1;
   background-color: #4a0043;
@@ -20,8 +21,6 @@
   justify-content: center;
   align-items: flex-end;
   align-content: stretch;
-  padding-bottom: 25px;
-  min-height: 755px;
 }
 
 .contactenos__content {
@@ -38,7 +37,7 @@
 }
 
 .contact__form {
-  max-width: 420px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -51,18 +50,41 @@
 }
 
 .contact__form form .form__input {
-  margin: 10px 5px;
+  margin: 3px 5px;
   width: 100%;
 }
 
 .contact__form form .full__input input{
   width: 100%;
+  color: #000476;
 } 
 
 .contact__form form .form__input input {
   border: 0;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000476;
+}
+
+.double__input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form__input--half {
+  width: 48%;
+  padding: 0 auto;
+  margin: 3px 5px;
+}
+
+.form__input--half input {
+  border: 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000476;
+  width: 100%;
 }
 
 .contactenos__title {
@@ -78,8 +100,9 @@
 }
 
 .contactenos__footer {
-  background-color: #171832;
-  opacity: 0.95;
+  background-color: #8100C8;
+  opacity: 1;
+  width: 100%;
 }
 
 .contactenos__map {
@@ -92,10 +115,123 @@
   padding-bottom: 30px
 }
 
-.contactenos__logo {
-}
-
 .contactenos__logo a img {
   height: 170px;
   margin-left: -50px;
+}
+
+.form__btn {
+  width: 100%;
+  height: 30px;
+  line-height: 26px;
+  background-color: #000476;
+  color: #fff;
+  font-size: 20px;
+  border-color: 1px solid #fff;
+  font-family: "Poppins";
+  margin-top: 15px;
+}
+
+.contactenos__footerPartners {
+}
+
+@media screen and (max-width: 414px) {
+
+  .contactenos{
+    background-color: #9a009a;
+    opacity: 1;
+  }
+
+  .contactenos__bgbanner {
+    width: 100%;
+    height: calc(100vh + 165px);
+    background-size: cover;
+    z-index: -1;
+    background-color: #4a0043;
+  }
+
+  .contact__form form {
+    flex-wrap: wrap;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .contactenos__title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .contactenos__clausule {
+    font-size: 10px;
+    color: #fff;
+    text-align: justify;
+    margin: 0 131px;
+    width: 90%;
+    font-weight: bold;
+  }
+
+  .contactenos__map a img {
+    width: 230px;
+    padding-top: 31px;
+    padding-bottom: 20px;
+  }
+
+  .contactenos__logo a img {
+    height: 120px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and ( max-width: 768px ) {
+
+  .contactenos{
+    background-color: #9a009a;
+    opacity: 1;
+  }
+  .contactenos__bgbanner {
+    width: 100%;
+    height: calc(100vh + 165px);
+    background-size: cover;
+    z-index: -1;
+    background-color: #4a0043;
+  }
+
+  .contactenos__map a img {
+    width: 255px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .contactenos__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 40px;
+  }
+
+  .contactenos__clausule {
+    font-size: 12px;
+    color: #fff;
+    text-align: justify;
+    font-weight: bold;
+  }
+}
+
+@media screen and ( max-width: 1024px ) {
+
+  .contactenos__bgbanner {
+    width: 100%;
+    height: 104vh;
+    background-size: cover;
+    z-index: -1;
+    background-color: #4a0043;
+  }
+
+  .contactenos__map a img {
+    width: 265px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
 }

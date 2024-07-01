@@ -63,7 +63,6 @@ endif;
 <div class="banner__container">
   <div class="carousel__container swiper">
     <div class="swiper-wrapper">
-      <!-- Slides -->
       <div class="swiper-slide"><img src="<?= get_template_directory_uri()."/images/tend1.png";?>" alt=""></div>
       <div class="swiper-slide"><img src="<?= get_template_directory_uri()."/images/tend2.png";?>" alt=""></div>
       <div class="swiper-slide"><img src="<?= get_template_directory_uri()."/images/tend3.png";?>" alt=""></div>
@@ -71,15 +70,9 @@ endif;
       <div class="swiper-slide"><img src="<?= get_template_directory_uri()."/images/tend1.png";?>" alt=""></div>
       <div class="swiper-slide"><img src="<?= get_template_directory_uri()."/images/tend4.png";?>" alt=""></div>
     </div>
-    <!-- <div class="swiper-pagination"></div> -->
   </div>
 </div>
-<!-- 
-
-<div class="bgPhone">
-  <div class="bgPhone__img"></div>
-</div>
- -->
+<?php get_template_part('template-parts/content', 'menu-footer' ); ?>
 <?php
   get_footer();
 ?>
