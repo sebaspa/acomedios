@@ -15,9 +15,11 @@
 <div class="banner__container <?php echo $pagename; ?>__container ">
   <div class="<?php echo $pagename; ?>__form">
 
-    <h1 class="<?php echo $pagename; ?>__title">¿Quieres Consultar<br>a los especialistas?</h1>
+    <h1 class="<?php echo $pagename; ?>__title"><span>Hazlo con</span> nosotros</h1>
 
     <div class="contact__form">
+      <?php echo apply_shortcodes( '[contact-form-7 id="7f03a09" title="contáctanos"]' ); ?>
+    <!--
       <form action="">
         <div class="full__input form__input">
           <input type="text" id="name" name="name" placeholder="Nombre Completo">
@@ -37,6 +39,7 @@
           <button class="form__btn" >Enviar</button>
         </div>
       </form>
+      -->
 
     </div>
 

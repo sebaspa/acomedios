@@ -11,7 +11,19 @@
   <?php 
     $post = $wp_query->get_queried_object();
     $pagename = $post->post_name;
-  ?>
+    $script_data  = array(
+      'pageTitle' => $page_title,
+      'pageId'    => $page_id,
+      'themeName' => $theme_name,
+      'pageName'  => $pagename,
+      'pageUrl'   => get_permalink(),
+      'base_url'  => site_url(),
+      'theme'     => get_template_directory_uri()
+    );
+?>
+  <script>
+    var script_data = <?= json_encode($script_data); ?>;
+  </script>
   
 </head>
 

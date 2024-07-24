@@ -1,0 +1,199 @@
+.personas-reales {
+  opacity: 0.90;
+}
+.personas-reales__bgbanner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/BG-personas-reales.png") right center no-repeat #4a0043;
+    background-size: cover ;
+    z-index: -1;
+    background-color: #4a0043;
+}
+
+.personas-reales__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personas-reales__content {
+  max-width: 1360px;
+  justify-content: center;
+  display:flex;
+  padding-top: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.personas-reales__content  .titles__content2 {
+  padding-top: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.banner__btn {
+  padding-left: 0px;
+  line-height: 45px;
+}
+
+.banner__btn a {
+  font-size: 20px;
+  line-height: 10px;
+  padding: 10px 15px;
+  margin-left: 25px;
+  margin-top: 35px;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-auto-rows: 200px;
+  gap: 15px;
+  grid-auto-flow: row dense;
+  padding: 10px;
+}
+
+.grid-gallery .grid-gallery__item {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.grid-gallery .grid-gallery__item .grid-gallery__image {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.watermark {
+  max-width: 50%; /* Ajusta esto al tamaño deseado para tu marca de agua */
+  max-height: 50%;
+}
+
+.grid-gallery .grid-gallery__item .grid-gallery__image:hover {
+  transform: scale(1.1);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-filter: none !important; 
+  filter: none !important;
+}
+
+@media all and (min-width: 320px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .grid-gallery__image {
+    width: 80%;
+    height: 80%;
+  }
+
+  .personas-reales__content  .titles__content2 {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width: 768px) {
+
+  .personas-reales__content {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner__btn {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .grid-gallery__image {
+    width: 85%;
+    height: 85%;
+  }
+
+  .personas-reales__content  .titles__content2 {
+    font-size: 40px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .personas-reales__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .grid-gallery__image {
+    width: 90%;
+    height: 90%;
+  }
+
+  .personas-reales__content  .titles__content2 {
+    font-size: 50px;
+  }
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+  grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+  grid-row: span 3;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

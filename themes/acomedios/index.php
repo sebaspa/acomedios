@@ -12,7 +12,15 @@ endif;
 */
 ?>
 <!-- Inicio div background -->
-<div class="bgBanner"></div>
+<div class="bgBanner">
+
+  <div class="bgBanner bgBanner__lion1">
+  </div>
+  <div class="bgBanner bgBanner__lion2">
+  </div>
+
+  <div class="bgBanner__front"></div>
+</div>
 <!-- Fin div background -->
 
 <!-- inicio div Contenedor para menu -->
@@ -28,11 +36,13 @@ endif;
       <br/>
       <span class="hacen">HACEN</span> <span class="realidad">REALIDAD</span>
     </p>
-    <div class="banner__imgJuntos">
-      <img src="<?= get_template_directory_uri()."/images/mejorjuntos.png";?>" alt="">
-    </div>
-    <div class="banner__imgPersonas">
-      <img src="<?= get_template_directory_uri()."/images/personasReales.png";?>" alt="">
+    <div class="banner_imgs">
+      <div class="banner__imgPersonas">
+        <img src="<?= get_template_directory_uri()."/images/personasReales.png";?>" alt="">
+      </div>
+      <div class="banner__imgJuntos">
+        <img src="<?= get_template_directory_uri()."/images/mejorjuntos.png";?>" alt="">
+      </div>
     </div>
     <div class="banner__btn">
       <a href="<?= site_url('servicios');?>">SERVICIOS INTEGRADOS</a>
@@ -48,6 +58,9 @@ endif;
   </div>
   <div class="banner__seccionInferior">
     <div class="banner__textIzquierdo">
+      <div class="banner__textIzquierdo--img">
+        <img src="<?= get_template_directory_uri()."/images/cultura-aco-480.png";?>" alt="">
+      </div>
       <p>
         <span class="bold">En nuestra agencia</span><br>
         el éxito lo construimos <br>

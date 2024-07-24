@@ -31,7 +31,7 @@
   height: 100px;
   align-items: center;
   justify-content: center;
-  opacity: 0.671;
+  opacity: 1;
   box-shadow: 5px 0px 10px rga(0,0,0,0.5);
 }
 
@@ -111,6 +111,9 @@ ul.show {
 
 .search-bar input {
   width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
 }
 
 .hidden {

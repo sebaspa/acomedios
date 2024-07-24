@@ -21,6 +21,7 @@
   justify-content: center;
   align-items: flex-end;
   align-content: stretch;
+  margin-bottom: 20px;
 }
 
 .contactenos__content {
@@ -52,6 +53,7 @@
 .contact__form form .form__input {
   margin: 3px 5px;
   width: 100%;
+  flex-direction: column;
 }
 
 .contact__form form .full__input input{
@@ -60,10 +62,10 @@
 } 
 
 .contact__form form .form__input input {
-  border: 0;
+  border: 1px solid #ffffff;
   font-size: 24px;
   line-height: 24px;
-  color: #000476;
+  color: #ffffff;
 }
 
 .double__input {
@@ -88,9 +90,22 @@
 }
 
 .contactenos__title {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 85px;
   color: #fff;
+  letter-spacing: -3px;
+  padding-bottom: 25px;
+  line-height: 46px;
+  align-self: end;
+  max-width: 360px;
+  font-family: "Poppins";
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.contactenos__title span {
+  font-size: 52px;
+  color: #6e00c3;
+  margin-left: -25px;
 }
 
 .contactenos__clausule {
@@ -127,7 +142,7 @@
   background-color: #000476;
   color: #fff;
   font-size: 20px;
-  border-color: 1px solid #fff;
+  border: 1px solid #FFFFFF;
   font-family: "Poppins";
   margin-top: 15px;
 }
@@ -205,10 +220,14 @@
   }
 
   .contactenos__title {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 60px;
     color: #fff;
     margin-top: 40px;
+    max-width: 270px;
+  }
+
+  .contactenos__title span {
+    font-size: 42px;
   }
 
   .contactenos__clausule {
@@ -216,6 +235,7 @@
     color: #fff;
     text-align: justify;
     font-weight: bold;
+    margin: 0 25px;
   }
 }
 
